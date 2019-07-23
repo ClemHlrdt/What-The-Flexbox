@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>FlexBox Nav</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
+
+  <!-- the wrapper is the flex container -->
   <div class="wrapper">
-    
+    <!-- HEADER START -->
     <header class="top">
       <h1><a href="#">What The Flexbox?!</a></h1>
     </header>
+    <!-- HEADER END -->
 
+    <!-- NAV START -->
     <nav class="flex-nav">
       <a href="#" class="toggleNav">☰ Menu</a>
       <ul>
@@ -37,7 +42,9 @@
         </li>
       </ul>
     </nav>
+    <!-- NAV END -->
 
+    <!-- SECTIONS START -->
     <section class="hero">
       <img src="http://lorempixel.com/1000/600/abstract">
     </section>
@@ -54,23 +61,25 @@
         <input type="submit" value="Sign me up!">
       </form>
     </section>
+    <!-- SECTION END -->
 
+    <!-- FOOTER START -->
     <footer>
       <p>&copy; Wes Bos</p>
     </footer>
+    <!-- FOOTER END -->
 
 
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script>
-    
-    $(function() {
-      $('.toggleNav').on('click',function() {
+    $(function () {
+      $('.toggleNav').on('click', function () {
         $('.flex-nav ul').toggleClass('open');
       });
     });
-
   </script>
 </body>
+
 </html>
